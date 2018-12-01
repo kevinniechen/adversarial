@@ -14,7 +14,7 @@ from art.utils import load_mnist_raw, preprocess
 
 from create_Neural_Network import create_Neural_Network
 from defense_function import def_SpatialSmoothing, def_AdversarialTraining, def_FeatureSqueezing, def_GaussianAugmentation, def_LabelSmoothing
-from attack_function import atk_DeepFool, atk_BasicIterative, atk_FastGradient, atk_JSMA, atk_CarliniAttack
+from attack_function import atk_DeepFool, atk_BasicIterative, atk_FastGradient, atk_JSMA, atk_CarliniAttack, atk_NeutonFool
 
 
 ## Read MNIST dataset (x_raw contains the original images):
@@ -52,6 +52,13 @@ x_test_adv, x_train_adv = atk_CarliniAttack(x_train, x_test, y_train, y_test, cl
 x_train_adv_all = np.append(x_train_adv_all, x_train_adv, axis=0)
 x_test_adv_all = np.append(x_test_adv_all, x_test_adv, axis=0)
 
+x_test_adv, x_train_adv = atk_NeutonFool(x_train, x_test, y_train, y_test, classifier)
+x_train_adv_all = np.append(x_train_adv_all, x_train_adv, axis=0)
+x_test_adv_all = np.append(x_test_adv_all, x_test_adv, axis=0)
+
+x_test_adv, x_train_adv = atk_UniPerturb(x_train, x_test, y_train, y_test, classifier)
+x_train_adv_all = np.append(x_train_adv_all, x_train_adv, axis=0)
+x_test_adv_all = np.append(x_test_adv_all, x_test_adv, axis=0)
 
 print("============ Finish Creating Attacks ============")
 

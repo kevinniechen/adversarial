@@ -2,7 +2,8 @@
 """
 Attack Functions
 """
-from art.attacks import DeepFool, BasicIterativeMethod, FastGradientMethod, SaliencyMapMethod, CarliniL2Method
+from art.attacks import DeepFool, BasicIterativeMethod, FastGradientMethod, SaliencyMapMethod, CarliniL2Method, NewtonFool
+from art.attacks.universal_perturbation import UniversalPerturbation
 from art.utils import random_targets
 
 from evaluate import evaluate
@@ -60,4 +61,23 @@ def atk_CarliniAttack(x_train, x_test, y_train, y_test, classifier):
     print("After CarliniAttack Attack  \n")
     evaluate(x_train, x_test, y_train, y_test, x_train_adv, x_test_adv, classifier)
     return x_test_adv, x_train_adv
+
+def atk_NeutonFool(x_train, x_test, y_train, y_test, classifier):
+    adv_crafter = NewtonFool(classifier, max_iter=20)
+    x_train_adv = adv_crafter.generate(x_train)
+    x_test_adv = adv_crafter.generate(x_test)
+
+    print("After NeutonFool Attack  \n")
+    evaluate(x_train, x_test, y_train, y_test, x_train_adv, x_test_adv, classifier)
+    return x_test_adv, x_train_adv
+
+def atk_UniPerturb(x_train, x_test, y_train, y_test, classifier):
+    attack_params = {"attacker": "newtonfool", "attacker_params": {"max_iter": 20}}
+    up = UniversalPerturbation(classifier)
+    x_train_adv = up.generate(x_train, **attack_params)
+    x_test_adv = up.generate(x_test, **attack_params)
+
+    print("After Universal Perturbing NeutonFool Attack  \n")
+    evaluate(x_train, x_test, y_train, y_test, x_train_adv, x_test_adv, classifier)
+    return x_test_adv, x_train_adv    
 
