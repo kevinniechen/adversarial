@@ -1,0 +1,36 @@
+==== SpatialSmoothing Defense==== 
+==== DeepFool Attack ====
+  TRAIN: 97.17% 
+  TRAIN-ADVERSARY: 88.65% 
+  TEST: 96.24% 
+  TEST-ADVERSARY: 88.07% 
+==== BasicIterative Attack ====
+  TRAIN: 97.17% 
+  TRAIN-ADVERSARY: 11.79% 
+  TEST: 96.24% 
+  TEST-ADVERSARY: 12.64% 
+==== FastGradient Attack ====
+  TRAIN: 97.17% 
+  TRAIN-ADVERSARY: 42.60% 
+  TEST: 96.24% 
+  TEST-ADVERSARY: 44.38% 
+==== JSMA Attack ====
+  TRAIN: 97.17% 
+  TRAIN-ADVERSARY: 95.19% 
+  TEST: 96.24% 
+  TEST-ADVERSARY: 93.15% 
+==== CarliniL2 Attack ====
+  TRAIN: 97.17% 
+  TRAIN-ADVERSARY: 93.88% 
+  TEST: 96.24% 
+  TEST-ADVERSARY: 81.89% 
+==== NewtonFool Attack ====
+  TRAIN: 97.17% 
+  TRAIN-ADVERSARY: 91.41% 
+  TEST: 96.24% 
+  TEST-ADVERSARY: 91.11% 
+==== UniPerturb Attack ====
+  TRAIN: 97.17% 
+  TRAIN-ADVERSARY: 10.22% 
+  TEST: 96.24% 
+  TEST-ADVERSARY: 8.92% 

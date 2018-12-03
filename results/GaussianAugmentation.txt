@@ -1,0 +1,36 @@
+==== GaussianAugmentation Defense==== 
+==== DeepFool Attack ====
+  TRAIN: 96.48% 
+  TRAIN-ADVERSARY: 96.48% 
+  TEST: 92.41% 
+  TEST-ADVERSARY: 96.00% 
+==== BasicIterative Attack ====
+  TRAIN: 96.48% 
+  TRAIN-ADVERSARY: 12.76% 
+  TEST: 92.41% 
+  TEST-ADVERSARY: 13.52% 
+==== FastGradient Attack ====
+  TRAIN: 96.48% 
+  TRAIN-ADVERSARY: 88.04% 
+  TEST: 92.41% 
+  TEST-ADVERSARY: 88.46% 
+==== JSMA Attack ====
+  TRAIN: 96.48% 
+  TRAIN-ADVERSARY: 95.75% 
+  TEST: 92.41% 
+  TEST-ADVERSARY: 94.14% 
+==== CarliniL2 Attack ====
+  TRAIN: 96.48% 
+  TRAIN-ADVERSARY: 95.73% 
+  TEST: 92.41% 
+  TEST-ADVERSARY: 88.58% 
+==== NewtonFool Attack ====
+  TRAIN: 96.48% 
+  TRAIN-ADVERSARY: 96.65% 
+  TEST: 92.41% 
+  TEST-ADVERSARY: 96.11% 
+==== UniPerturb Attack ====
+  TRAIN: 96.48% 
+  TRAIN-ADVERSARY: 9.96% 
+  TEST: 92.41% 
+  TEST-ADVERSARY: 9.97% 

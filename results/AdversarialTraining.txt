@@ -1,0 +1,36 @@
+==== AdversarialTraining Defense==== 
+==== DeepFool Attack ====
+  TRAIN: 98.78% 
+  TRAIN-ADVERSARY: 99.02% 
+  TEST: 97.44% 
+  TEST-ADVERSARY: 97.66% 
+==== BasicIterative Attack ====
+  TRAIN: 97.70% 
+  TRAIN-ADVERSARY: 98.02% 
+  TEST: 96.79% 
+  TEST-ADVERSARY: 96.88% 
+==== FastGradient Attack ====
+  TRAIN: 98.38% 
+  TRAIN-ADVERSARY: 98.69% 
+  TEST: 97.10% 
+  TEST-ADVERSARY: 97.26% 
+==== JSMA Attack ====
+  TRAIN: 98.15% 
+  TRAIN-ADVERSARY: 98.70% 
+  TEST: 96.98% 
+  TEST-ADVERSARY: 89.05% 
+==== CarliniL2 Attack ====
+  TRAIN: 98.17% 
+  TRAIN-ADVERSARY: 97.77% 
+  TEST: 96.81% 
+  TEST-ADVERSARY: 93.70% 
+==== NewtonFool Attack ====
+  TRAIN: 98.48% 
+  TRAIN-ADVERSARY: 98.86% 
+  TEST: 96.97% 
+  TEST-ADVERSARY: 97.53% 
+==== UniPerturb Attack ====
+  TRAIN: 98.07% 
+  TRAIN-ADVERSARY: 9.87% 
+  TEST: 97.09% 
+  TEST-ADVERSARY: 9.80% 

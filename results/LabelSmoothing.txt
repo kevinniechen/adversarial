@@ -1,0 +1,36 @@
+==== LabelSmoothing Defense==== 
+==== DeepFool Attack ====
+  TRAIN: 98.63% 
+  TRAIN-ADVERSARY: 92.97% 
+  TEST: 97.57% 
+  TEST-ADVERSARY: 92.27% 
+==== BasicIterative Attack ====
+  TRAIN: 98.63% 
+  TRAIN-ADVERSARY: 11.85% 
+  TEST: 97.57% 
+  TEST-ADVERSARY: 12.72% 
+==== FastGradient Attack ====
+  TRAIN: 98.63% 
+  TRAIN-ADVERSARY: 44.72% 
+  TEST: 97.57% 
+  TEST-ADVERSARY: 46.04% 
+==== JSMA Attack ====
+  TRAIN: 98.63% 
+  TRAIN-ADVERSARY: 76.85% 
+  TEST: 97.57% 
+  TEST-ADVERSARY: 70.37% 
+==== CarliniL2 Attack ====
+  TRAIN: 98.63% 
+  TRAIN-ADVERSARY: 95.77% 
+  TEST: 97.57% 
+  TEST-ADVERSARY: 83.94% 
+==== NewtonFool Attack ====
+  TRAIN: 98.63% 
+  TRAIN-ADVERSARY: 95.68% 
+  TEST: 97.57% 
+  TEST-ADVERSARY: 94.24% 
+==== UniPerturb Attack ====
+  TRAIN: 98.63% 
+  TRAIN-ADVERSARY: 15.78% 
+  TEST: 97.57% 
+  TEST-ADVERSARY: 9.74% 

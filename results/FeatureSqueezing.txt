@@ -1,0 +1,31 @@
+==== FeatureSqueezing Defense==== 
+==== DeepFool Attack ====
+  TRAIN: 97.95% 
+  TRAIN-ADVERSARY: 97.49% 
+  TEST: 96.73% 
+  TEST-ADVERSARY: 96.34% 
+==== BasicIterative Attack ====
+  TRAIN: 97.95% 
+  TRAIN-ADVERSARY: 12.72% 
+  TEST: 96.73% 
+  TEST-ADVERSARY: 13.47% 
+==== FastGradient Attack ====
+  TRAIN: 97.95% 
+  TRAIN-ADVERSARY: 94.57% 
+  TEST: 96.73% 
+  TEST-ADVERSARY: 94.12% 
+==== JSMA Attack ====
+  TRAIN: 97.95% 
+  TRAIN-ADVERSARY: 78.23% 
+  TEST: 96.73% 
+  TEST-ADVERSARY: 79.18% 
+==== CarliniL2 Attack ====
+  TRAIN: 97.95% 
+  TRAIN-ADVERSARY: 94.52% 
+  TEST: 96.73% 
+  TEST-ADVERSARY: 81.58% 
+==== NewtonFool Attack ====
+  TRAIN: 97.95% 
+  TRAIN-ADVERSARY: 97.63% 
+  TEST: 96.73% 
+  TEST-ADVERSARY: 96.45% 
