@@ -59,6 +59,12 @@ preds = np.argmax(classifier.predict(x_test_adv), axis=1)
 acc = np.sum(preds == np.argmax(y_test, axis=1)) / y_test.shape[0]
 print('Accuracy on adversarial samples: %.2f%% \n' % (acc * 100))
 
+from defense import Defense
+
+print("Starting defense.")
+d = Defense(x_train_adv, x_test_adv)
+d.adversarial_training()
+
 ## LabelSmoothing
 labelsmoother = LabelSmoothing()
 x_train, y_train = labelsmoother(x_train, y_train, max_value=.8)

@@ -31,18 +31,13 @@ classifier.fit(x_train, y_train, nb_epochs=5, batch_size=50)
 
 
 # create attacks
-x_test_adv, x_train_adv = atk_DeepFool(x_train, x_test, y_train, y_test, classifier)
+x_test_adv, x_train_adv = atk_BasicIterative(x_train, x_test, y_train, y_test, classifier)
 x_train_adv_all = x_train_adv
 x_test_adv_all = x_test_adv
-
-x_test_adv, x_train_adv = atk_BasicIterative(x_train, x_test, y_train, y_test, classifier)
-x_train_adv_all = np.append(x_train_adv_all, x_train_adv, axis=0)
-x_test_adv_all = np.append(x_test_adv_all, x_test_adv, axis=0)
 
 x_test_adv, x_train_adv = atk_FastGradient(x_train, x_test, y_train, y_test, classifier)
 x_train_adv_all = np.append(x_train_adv_all, x_train_adv, axis=0)
 x_test_adv_all = np.append(x_test_adv_all, x_test_adv, axis=0)
-
 
 x_test_adv, x_train_adv = atk_JSMA(x_train, x_test, y_train, y_test, classifier)
 x_train_adv_all = np.append(x_train_adv_all, x_train_adv, axis=0)
@@ -57,6 +52,10 @@ x_train_adv_all = np.append(x_train_adv_all, x_train_adv, axis=0)
 x_test_adv_all = np.append(x_test_adv_all, x_test_adv, axis=0)
 
 x_test_adv, x_train_adv = atk_UniPerturb(x_train, x_test, y_train, y_test, classifier)
+x_train_adv_all = np.append(x_train_adv_all, x_train_adv, axis=0)
+x_test_adv_all = np.append(x_test_adv_all, x_test_adv, axis=0)
+
+x_test_adv, x_train_adv = atk_DeepFool(x_train, x_test, y_train, y_test, classifier)
 x_train_adv_all = np.append(x_train_adv_all, x_train_adv, axis=0)
 x_test_adv_all = np.append(x_test_adv_all, x_test_adv, axis=0)
 
