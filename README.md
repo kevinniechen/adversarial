@@ -1,7 +1,7 @@
 # Evaluating the Landscape of Adversarial Attacks and Defenses
 CMSC 727 Final Project
 
-Authors: Kevin Chen, Dexter Lee, Jacob Steen, Shivang Patel
+*Authors:* Kevin Chen, Dexter Lee, Jacob Steen, Shivang Patel
 
 ## Dependencies
 - python 3.6
