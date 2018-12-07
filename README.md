@@ -1,8 +1,14 @@
 # Evaluating the Landscape of Adversarial Attacks and Defenses
-*Authors:* Kevin Chen, Dexter Lee, Jacob Steen, Shivang Patel
+**Authors:** Kevin Chen, Dexter Lee, Jacob Steen, Shivang Patel
+
+![Sample](sample_fig.png)
+
+## Description
+Our project aimed to test two hypothesis about adver-sarial attacks and defenses.
+**Hypothesis 1:** Because  distinct adversarial attacks employ different methods for generating adversarial examples, we  believe  that no defense method will allowclassifiers to be robust against all attacks.
+**Hypothesis 2:** Because larger networks (deeper or more nodes) allow for more complex decision surfaces, adversarial attacks will decrease the accuracy of deeper networks more than they will for shallower networks.
 
 ![Cover](cover.png)
-![Sample](sample_fig.png)
 
 ## Prerequisites
 - python 3.6+
