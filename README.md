@@ -8,21 +8,17 @@ Authors: Kevin Chen, Dexter Lee, Jacob Steen, Shivang Patel
 - Tensorflow
 - Keras
 - numpy
-- panda
+- pandas
 - IBM Adversarial Training Robustness Toolbox
-
-IBM Adversarial Training Robustness Toolbox:
-https://github.com/IBM/adversarial-robustness-toolbox
 
 ## Attacks:
 - Fast Gradient Sign Method
-- acobian Saliency Map Attack
+- Jacobian Saliency Map Attack
 - DeepFool
 - NewtonFool
 - Carlini L2 Attack
 - Basic Iterative Method
 - Universal Perturbation
-
 
 ## Defenses:
 - Feature Squeezing
