@@ -1,7 +1,9 @@
 # Evaluating the Landscape of Adversarial Attacks and Defenses
 CMSC 727 Final Project
 
-## Depenency
+Authors: Kevin Chen, Dexter Lee, Jacob Steen, Shivang Patel
+
+## Dependencies
 - python 3.6
 - Tensorflow
 - Keras
